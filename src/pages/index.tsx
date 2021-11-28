@@ -1,3 +1,5 @@
+// import { ReactElement } from 'react'
+
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -62,3 +64,7 @@ export default function Home() {
     </div>
   )
 }
+
+// Home.getLayout = function getLayout(page: ReactElement) {
+//   return <Layout>{page}</Layout>
+// }
