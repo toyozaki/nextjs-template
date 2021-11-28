@@ -1,5 +1,6 @@
 import { ReactElement, ReactNode } from 'react'
 
+import { ChakraProvider } from '@chakra-ui/provider'
 import { NextPage } from 'next'
 
 import type { AppProps } from 'next/app'
@@ -15,7 +16,7 @@ type AppPropsWithLayout = AppProps & {
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? (page => page)
 
-  return getLayout(<Component {...pageProps} />)
+  return <ChakraProvider>{getLayout(<Component {...pageProps} />)}</ChakraProvider>
 }
 
 export default MyApp
