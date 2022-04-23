@@ -1,9 +1,13 @@
 // import { ReactElement } from 'react'
 
+import dynamic from 'next/dynamic'
 import Head from 'next/head'
 
-import { ReactQuery } from '@components'
 import styles from '@styles/Home.module.css'
+
+const ReactBeautifulDnd = dynamic(() => import('@components/ReactBeautifulDnd'), {
+  ssr: false,
+})
 
 export default function Home() {
   return (
@@ -15,7 +19,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <ReactQuery />
+        {/* <ReactQuery /> */}
+        <ReactBeautifulDnd />
       </main>
     </div>
   )
