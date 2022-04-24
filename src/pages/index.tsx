@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 import styles from '@styles/Home.module.css'
 
-const ReactBeautifulDnd = dynamic(() => import('@components/ReactBeautifulDnd'), {
+const ReactBeautifulDnd = dynamic(() => import('@components/ReactBeautifulDndTwoList'), {
   ssr: false,
 })
 
