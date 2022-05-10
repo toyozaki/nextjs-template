@@ -1,11 +1,10 @@
-import styles from '@styles/Home.module.css'
 import Head from 'next/head'
 
-import { Sample01 } from '@components/StyledComponentsSamples'
+import { Sample01, Sample02 } from '@components/StyledComponentsSamples'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Styled components sample</title>
         <meta name="description" content="Styled components sample" />
@@ -14,7 +13,8 @@ export default function Home() {
 
       <main>
         <Sample01 />
+        <Sample02 />
       </main>
-    </div>
+    </>
   )
 }
