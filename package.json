@@ -11,12 +11,12 @@
     "update": "npm-check -u"
   },
   "dependencies": {
-    "next": "11.0.1",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "17.0.13",
+    "@types/react": "^18.0.21",
     "eslint": "^7.29.0",
     "eslint-config-next": "^11.0.1",
     "eslint-config-prettier": "^8.3.0",
