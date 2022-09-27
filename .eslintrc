@@ -2,7 +2,12 @@
   "extends": ["next", "next/core-web-vitals", "plugin:prettier/recommended"],
   "plugins": ["import", "unused-imports"],
   "rules": {
-    "import/newline-after-import": ["error", { "count": 1 }],
+    "import/newline-after-import": [
+      "error",
+      {
+        "count": 1
+      }
+    ],
     "import/order": [
       "error",
       {
@@ -44,10 +49,15 @@
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
-      { "vars": "all", "varsIgnorePattern": "^_", "args": "after-used", "argsIgnorePattern": "^_" }
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
     ]
   },
   "settings": {
-    "import/internal-regex": "^@{pages, styles}"
+    "import/internal-regex": "^@{components, pages, styles, utils}"
   }
 }
